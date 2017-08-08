@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		650CDFBB1F3A619B00B638FF /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CDFB21F3A619B00B638FF /* GeoFire.m */; };
+		650CDFBC1F3A619B00B638FF /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CDFB41F3A619B00B638FF /* GFBase32Utils.m */; };
+		650CDFBD1F3A619B00B638FF /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CDFB61F3A619B00B638FF /* GFGeoHash.m */; };
+		650CDFBE1F3A619B00B638FF /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CDFB81F3A619B00B638FF /* GFGeoHashQuery.m */; };
+		650CDFBF1F3A619B00B638FF /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CDFBA1F3A619B00B638FF /* GFQuery.m */; };
+		927D6F194CBD1B39AD5D4976 /* Pods_Relief.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D871DA575399D28BE19E35 /* Pods_Relief.framework */; };
+		D529D77D1EEA1D230091210E /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529D77C1EEA1D230091210E /* constant.swift */; };
+		D529D77F1EEAD98A0091210E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D529D77E1EEAD98A0091210E /* GoogleService-Info.plist */; };
+		D529D78A1F0A9B440091210E /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529D7891F0A9B440091210E /* CosmosDistrib.swift */; };
+		D529D78C1F0AAB360091210E /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529D78B1F0AAB360091210E /* DataCell.swift */; };
+		D529D78E1F0AB5FE0091210E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529D78D1F0AB5FE0091210E /* Post.swift */; };
+		D5A417CB1EE64BEC002571A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A417CA1EE64BEC002571A6 /* AppDelegate.swift */; };
+		D5A417CD1EE64BEC002571A6 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A417CC1EE64BEC002571A6 /* SignInVC.swift */; };
+		D5A417D01EE64BEC002571A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A417CE1EE64BEC002571A6 /* Main.storyboard */; };
+		D5A417D31EE64BEC002571A6 /* Relief.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5A417D11EE64BEC002571A6 /* Relief.xcdatamodeld */; };
+		D5A417D51EE64BEC002571A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A417D41EE64BEC002571A6 /* Assets.xcassets */; };
+		D5A417D81EE64BEC002571A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A417D61EE64BEC002571A6 /* LaunchScreen.storyboard */; };
+		D5A417E51EE6E1F2002571A6 /* TextBoxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A417E41EE6E1F2002571A6 /* TextBoxes.swift */; };
+		D5A417E71EE6E468002571A6 /* searchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A417E61EE6E468002571A6 /* searchScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		142D0BC58198E73BAE076097 /* Pods-Relief.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relief.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Relief/Pods-Relief.debug.xcconfig"; sourceTree = "<group>"; };
+		48D871DA575399D28BE19E35 /* Pods_Relief.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Relief.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		650CDFAB1F3A619B00B638FF /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		650CDFAC1F3A619B00B638FF /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		650CDFAD1F3A619B00B638FF /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		650CDFAE1F3A619B00B638FF /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		650CDFAF1F3A619B00B638FF /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
+		650CDFB11F3A619B00B638FF /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		650CDFB21F3A619B00B638FF /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		650CDFB31F3A619B00B638FF /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		650CDFB41F3A619B00B638FF /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		650CDFB51F3A619B00B638FF /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		650CDFB61F3A619B00B638FF /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		650CDFB71F3A619B00B638FF /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		650CDFB81F3A619B00B638FF /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		650CDFB91F3A619B00B638FF /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		650CDFBA1F3A619B00B638FF /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
+		650CDFC21F3A62D800B638FF /* Relief-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Relief-Bridging-Header.h"; sourceTree = "<group>"; };
+		84F8028FD008B179FEDF0681 /* Pods-Relief.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relief.release.xcconfig"; path = "Pods/Target Support Files/Pods-Relief/Pods-Relief.release.xcconfig"; sourceTree = "<group>"; };
+		D529D77C1EEA1D230091210E /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
+		D529D77E1EEAD98A0091210E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D529D7891F0A9B440091210E /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmosDistrib.swift; sourceTree = "<group>"; };
+		D529D78B1F0AAB360091210E /* DataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+		D529D78D1F0AB5FE0091210E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D5A417C71EE64BEC002571A6 /* Relief.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relief.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A417CA1EE64BEC002571A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5A417CC1EE64BEC002571A6 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		D5A417CF1EE64BEC002571A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5A417D21EE64BEC002571A6 /* Relief.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Relief.xcdatamodel; sourceTree = "<group>"; };
+		D5A417D41EE64BEC002571A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5A417D71EE64BEC002571A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5A417D91EE64BEC002571A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5A417E41EE6E1F2002571A6 /* TextBoxes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextBoxes.swift; sourceTree = "<group>"; };
+		D5A417E61EE6E468002571A6 /* searchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5A417C41EE64BEC002571A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927D6F194CBD1B39AD5D4976 /* Pods_Relief.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		650CDFA91F3A619B00B638FF /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				650CDFAA1F3A619B00B638FF /* API */,
+				650CDFAF1F3A619B00B638FF /* GeoFire-Prefix.pch */,
+				650CDFB01F3A619B00B638FF /* Implementation */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		650CDFAA1F3A619B00B638FF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				650CDFAB1F3A619B00B638FF /* GeoFire.h */,
+				650CDFAC1F3A619B00B638FF /* GFCircleQuery.h */,
+				650CDFAD1F3A619B00B638FF /* GFQuery.h */,
+				650CDFAE1F3A619B00B638FF /* GFRegionQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		650CDFB01F3A619B00B638FF /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				650CDFB11F3A619B00B638FF /* GeoFire+Private.h */,
+				650CDFB21F3A619B00B638FF /* GeoFire.m */,
+				650CDFB31F3A619B00B638FF /* GFBase32Utils.h */,
+				650CDFB41F3A619B00B638FF /* GFBase32Utils.m */,
+				650CDFB51F3A619B00B638FF /* GFGeoHash.h */,
+				650CDFB61F3A619B00B638FF /* GFGeoHash.m */,
+				650CDFB71F3A619B00B638FF /* GFGeoHashQuery.h */,
+				650CDFB81F3A619B00B638FF /* GFGeoHashQuery.m */,
+				650CDFB91F3A619B00B638FF /* GFQuery+Private.h */,
+				650CDFBA1F3A619B00B638FF /* GFQuery.m */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		D5A417BE1EE64BEC002571A6 = {
+			isa = PBXGroup;
+			children = (
+				D5A417C91EE64BEC002571A6 /* Relief */,
+				D5A417C81EE64BEC002571A6 /* Products */,
+				F4FFC721182343CC7D686A03 /* Pods */,
+				DC7B9DAA1FEA0E563DA8063B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5A417C81EE64BEC002571A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5A417C71EE64BEC002571A6 /* Relief.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5A417C91EE64BEC002571A6 /* Relief */ = {
+			isa = PBXGroup;
+			children = (
+				650CDFA91F3A619B00B638FF /* GeoFire */,
+				D5A417E31EE6DD29002571A6 /* Constants */,
+				D5A417E21EE6DD25002571A6 /* Util */,
+				D5A417E11EE6DD20002571A6 /* Controller */,
+				D5A417E01EE6DD1C002571A6 /* View */,
+				D5A417DF1EE6DD16002571A6 /* Model */,
+				D5A417CA1EE64BEC002571A6 /* AppDelegate.swift */,
+				D5A417CE1EE64BEC002571A6 /* Main.storyboard */,
+				D5A417D61EE64BEC002571A6 /* LaunchScreen.storyboard */,
+				D5A417D91EE64BEC002571A6 /* Info.plist */,
+				D529D77E1EEAD98A0091210E /* GoogleService-Info.plist */,
+				D5A417D11EE64BEC002571A6 /* Relief.xcdatamodeld */,
+				650CDFC21F3A62D800B638FF /* Relief-Bridging-Header.h */,
+			);
+			path = Relief;
+			sourceTree = "<group>";
+		};
+		D5A417DF1EE6DD16002571A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D529D78D1F0AB5FE0091210E /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D5A417E01EE6DD1C002571A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D529D78B1F0AAB360091210E /* DataCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D5A417E11EE6DD20002571A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5A417CC1EE64BEC002571A6 /* SignInVC.swift */,
+				D5A417E61EE6E468002571A6 /* searchScreen.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D5A417E21EE6DD25002571A6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D5A417D41EE64BEC002571A6 /* Assets.xcassets */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		D5A417E31EE6DD29002571A6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D529D77C1EEA1D230091210E /* constant.swift */,
+				D5A417E41EE6E1F2002571A6 /* TextBoxes.swift */,
+				D529D7891F0A9B440091210E /* CosmosDistrib.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		DC7B9DAA1FEA0E563DA8063B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48D871DA575399D28BE19E35 /* Pods_Relief.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4FFC721182343CC7D686A03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				142D0BC58198E73BAE076097 /* Pods-Relief.debug.xcconfig */,
+				84F8028FD008B179FEDF0681 /* Pods-Relief.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5A417C61EE64BEC002571A6 /* Relief */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5A417DC1EE64BEC002571A6 /* Build configuration list for PBXNativeTarget "Relief" */;
+			buildPhases = (
+				54C858050EA3CD0CAD1FD341 /* [CP] Check Pods Manifest.lock */,
+				D5A417C31EE64BEC002571A6 /* Sources */,
+				D5A417C41EE64BEC002571A6 /* Frameworks */,
+				D5A417C51EE64BEC002571A6 /* Resources */,
+				AD1199FC433222A5B98695FE /* [CP] Embed Pods Frameworks */,
+				EDCE149E2AE9421C955CEB26 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Relief;
+			productName = Relief;
+			productReference = D5A417C71EE64BEC002571A6 /* Relief.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5A417BF1EE64BEC002571A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = HSI;
+				TargetAttributes = {
+					D5A417C61EE64BEC002571A6 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = AK4RWB2TUN;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D5A417C21EE64BEC002571A6 /* Build configuration list for PBXProject "Relief" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5A417BE1EE64BEC002571A6;
+			productRefGroup = D5A417C81EE64BEC002571A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5A417C61EE64BEC002571A6 /* Relief */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5A417C51EE64BEC002571A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A417D81EE64BEC002571A6 /* LaunchScreen.storyboard in Resources */,
+				D5A417D51EE64BEC002571A6 /* Assets.xcassets in Resources */,
+				D5A417D01EE64BEC002571A6 /* Main.storyboard in Resources */,
+				D529D77F1EEAD98A0091210E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54C858050EA3CD0CAD1FD341 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Relief-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD1199FC433222A5B98695FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Relief/Pods-Relief-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Relief/Pods-Relief-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDCE149E2AE9421C955CEB26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Relief/Pods-Relief-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5A417C31EE64BEC002571A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A417E51EE6E1F2002571A6 /* TextBoxes.swift in Sources */,
+				D529D77D1EEA1D230091210E /* constant.swift in Sources */,
+				D5A417E71EE6E468002571A6 /* searchScreen.swift in Sources */,
+				650CDFBE1F3A619B00B638FF /* GFGeoHashQuery.m in Sources */,
+				650CDFBC1F3A619B00B638FF /* GFBase32Utils.m in Sources */,
+				D529D78C1F0AAB360091210E /* DataCell.swift in Sources */,
+				D5A417CD1EE64BEC002571A6 /* SignInVC.swift in Sources */,
+				D529D78A1F0A9B440091210E /* CosmosDistrib.swift in Sources */,
+				D529D78E1F0AB5FE0091210E /* Post.swift in Sources */,
+				D5A417CB1EE64BEC002571A6 /* AppDelegate.swift in Sources */,
+				D5A417D31EE64BEC002571A6 /* Relief.xcdatamodeld in Sources */,
+				650CDFBD1F3A619B00B638FF /* GFGeoHash.m in Sources */,
+				650CDFBB1F3A619B00B638FF /* GeoFire.m in Sources */,
+				650CDFBF1F3A619B00B638FF /* GFQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D5A417CE1EE64BEC002571A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5A417CF1EE64BEC002571A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5A417D61EE64BEC002571A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5A417D71EE64BEC002571A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5A417DA1EE64BEC002571A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5A417DB1EE64BEC002571A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5A417DD1EE64BEC002571A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 142D0BC58198E73BAE076097 /* Pods-Relief.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AK4RWB2TUN;
+				INFOPLIST_FILE = Relief/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.default.Relief;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Relief/Relief-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D5A417DE1EE64BEC002571A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F8028FD008B179FEDF0681 /* Pods-Relief.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AK4RWB2TUN;
+				INFOPLIST_FILE = Relief/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.default.Relief;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Relief/Relief-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5A417C21EE64BEC002571A6 /* Build configuration list for PBXProject "Relief" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5A417DA1EE64BEC002571A6 /* Debug */,
+				D5A417DB1EE64BEC002571A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5A417DC1EE64BEC002571A6 /* Build configuration list for PBXNativeTarget "Relief" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5A417DD1EE64BEC002571A6 /* Debug */,
+				D5A417DE1EE64BEC002571A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D5A417D11EE64BEC002571A6 /* Relief.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D5A417D21EE64BEC002571A6 /* Relief.xcdatamodel */,
+			);
+			currentVersion = D5A417D21EE64BEC002571A6 /* Relief.xcdatamodel */;
+			path = Relief.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D5A417BF1EE64BEC002571A6 /* Project object */;
+}
