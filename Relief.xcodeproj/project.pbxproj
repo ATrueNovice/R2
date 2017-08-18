@@ -12,6 +12,7 @@
 		650CDFBD1F3A619B00B638FF /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CDFB61F3A619B00B638FF /* GFGeoHash.m */; };
 		650CDFBE1F3A619B00B638FF /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CDFB81F3A619B00B638FF /* GFGeoHashQuery.m */; };
 		650CDFBF1F3A619B00B638FF /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CDFBA1F3A619B00B638FF /* GFQuery.m */; };
+		65C4C6901F3FBA5E0035F3E0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C4C68F1F3FBA5E0035F3E0 /* DataService.swift */; };
 		927D6F194CBD1B39AD5D4976 /* Pods_Relief.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D871DA575399D28BE19E35 /* Pods_Relief.framework */; };
 		D529D77D1EEA1D230091210E /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529D77C1EEA1D230091210E /* constant.swift */; };
 		D529D77F1EEAD98A0091210E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D529D77E1EEAD98A0091210E /* GoogleService-Info.plist */; };
@@ -47,6 +48,7 @@
 		650CDFB91F3A619B00B638FF /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		650CDFBA1F3A619B00B638FF /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		650CDFC21F3A62D800B638FF /* Relief-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Relief-Bridging-Header.h"; sourceTree = "<group>"; };
+		65C4C68F1F3FBA5E0035F3E0 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		84F8028FD008B179FEDF0681 /* Pods-Relief.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Relief.release.xcconfig"; path = "Pods/Target Support Files/Pods-Relief/Pods-Relief.release.xcconfig"; sourceTree = "<group>"; };
 		D529D77C1EEA1D230091210E /* constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
 		D529D77E1EEAD98A0091210E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 			path = Implementation;
 			sourceTree = "<group>";
 		};
+		65C4C68E1F3FBA4E0035F3E0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				65C4C68F1F3FBA5E0035F3E0 /* DataService.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		D5A417BE1EE64BEC002571A6 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +146,7 @@
 		D5A417C91EE64BEC002571A6 /* Relief */ = {
 			isa = PBXGroup;
 			children = (
+				65C4C68E1F3FBA4E0035F3E0 /* Data */,
 				650CDFA91F3A619B00B638FF /* GeoFire */,
 				D5A417E31EE6DD29002571A6 /* Constants */,
 				D5A417E21EE6DD25002571A6 /* Util */,
@@ -375,6 +386,7 @@
 				D5A417CD1EE64BEC002571A6 /* SignInVC.swift in Sources */,
 				D529D78A1F0A9B440091210E /* CosmosDistrib.swift in Sources */,
 				D529D78E1F0AB5FE0091210E /* Post.swift in Sources */,
+				65C4C6901F3FBA5E0035F3E0 /* DataService.swift in Sources */,
 				D5A417CB1EE64BEC002571A6 /* AppDelegate.swift in Sources */,
 				D5A417D31EE64BEC002571A6 /* Relief.xcdatamodeld in Sources */,
 				650CDFBD1F3A619B00B638FF /* GFGeoHash.m in Sources */,

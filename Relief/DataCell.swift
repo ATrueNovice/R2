@@ -20,11 +20,11 @@ class DataCell: UITableViewCell {
         super.awakeFromNib()
     }
 
-    func configureCell(post: Post){
-        self.venueLbl.text = post.venue
+    func configureCell(post: Post) {
+        self.post = post
+        self.venueLbl.text = post.locationName
         self.addressLbl.text = post.address
         
     }
-
 
 }

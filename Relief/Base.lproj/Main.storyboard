@@ -279,6 +279,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="mapView" destination="M0N-D4-yOe" id="blu-41-8GB"/>
                         <outlet property="tableView" destination="DDu-Ql-z2i" id="eRw-E0-9Xi"/>
                     </connections>
                 </viewController>
