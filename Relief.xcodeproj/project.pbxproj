@@ -18,7 +18,7 @@
 		D529D77F1EEAD98A0091210E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D529D77E1EEAD98A0091210E /* GoogleService-Info.plist */; };
 		D529D78A1F0A9B440091210E /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529D7891F0A9B440091210E /* CosmosDistrib.swift */; };
 		D529D78C1F0AAB360091210E /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529D78B1F0AAB360091210E /* DataCell.swift */; };
-		D529D78E1F0AB5FE0091210E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529D78D1F0AB5FE0091210E /* Post.swift */; };
+		D529D78E1F0AB5FE0091210E /* venueData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529D78D1F0AB5FE0091210E /* venueData.swift */; };
 		D5A417CB1EE64BEC002571A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A417CA1EE64BEC002571A6 /* AppDelegate.swift */; };
 		D5A417CD1EE64BEC002571A6 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A417CC1EE64BEC002571A6 /* SignInVC.swift */; };
 		D5A417D01EE64BEC002571A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A417CE1EE64BEC002571A6 /* Main.storyboard */; };
@@ -54,7 +54,7 @@
 		D529D77E1EEAD98A0091210E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D529D7891F0A9B440091210E /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmosDistrib.swift; sourceTree = "<group>"; };
 		D529D78B1F0AAB360091210E /* DataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
-		D529D78D1F0AB5FE0091210E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D529D78D1F0AB5FE0091210E /* venueData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = venueData.swift; sourceTree = "<group>"; };
 		D5A417C71EE64BEC002571A6 /* Relief.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Relief.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A417CA1EE64BEC002571A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5A417CC1EE64BEC002571A6 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 		D5A417DF1EE6DD16002571A6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D529D78D1F0AB5FE0091210E /* Post.swift */,
+				D529D78D1F0AB5FE0091210E /* venueData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -326,13 +326,12 @@
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -341,13 +340,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,7 +383,7 @@
 				D529D78C1F0AAB360091210E /* DataCell.swift in Sources */,
 				D5A417CD1EE64BEC002571A6 /* SignInVC.swift in Sources */,
 				D529D78A1F0A9B440091210E /* CosmosDistrib.swift in Sources */,
-				D529D78E1F0AB5FE0091210E /* Post.swift in Sources */,
+				D529D78E1F0AB5FE0091210E /* venueData.swift in Sources */,
 				65C4C6901F3FBA5E0035F3E0 /* DataService.swift in Sources */,
 				D5A417CB1EE64BEC002571A6 /* AppDelegate.swift in Sources */,
 				D5A417D31EE64BEC002571A6 /* Relief.xcdatamodeld in Sources */,

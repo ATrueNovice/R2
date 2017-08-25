@@ -11,7 +11,6 @@ target 'Relief' do
 	pod ‘Firebase/Database’
 	pod ‘Firebase/Storage’
 	pod ‘FacebookLogin’
-pod 'FacebookShare', :git => 'https://github.com/1amageek/facebook-sdk-swift'
 	pod ‘FBSDKLoginKit’
     pod 'SwiftKeychainWrapper'
     pod 'Cosmos'

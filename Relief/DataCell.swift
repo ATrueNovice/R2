@@ -14,14 +14,13 @@ class DataCell: UITableViewCell {
     @IBOutlet weak var venueLbl: UILabel!
     @IBOutlet weak var addressLbl: UILabel!
 
-    var post: Post!
+    var post: venueData!
 
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
-    func configureCell(post: Post) {
-        self.post = post
+    func configureCell(post: venueData) {
         self.venueLbl.text = post.locationName
         self.addressLbl.text = post.address
         
