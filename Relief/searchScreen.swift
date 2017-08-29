@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import Firebase
+import SwiftKeychainWrapper
 
 class Seach_Screen: UIViewController, UITableViewDelegate, UITableViewDataSource, MKMapViewDelegate, CLLocationManagerDelegate {
 
@@ -27,19 +28,17 @@ class Seach_Screen: UIViewController, UITableViewDelegate, UITableViewDataSource
         tableView.delegate = self
         tableView.dataSource = self
 
-        self.tableView.reloadData()
-
         mapView.delegate = self
         mapView.userTrackingMode = MKUserTrackingMode.follow
 
-        Dataservice.ds.REF_VENUE.observeSingleEvent(of: .value, with: { snapshot in
+        Dataservice.ds.REF_VENUE.observe(.value, with: { (snapshot) in
 
-            if snapshot.children.allObjects is [DataSnapshot] {
-                for snap in snapshot.children {
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
+                for snap in snapshot {
+                    print("Snap: \(snap)")
 
-
-                    if let postDict = snap as? Dictionary<String, Any> {
-                        let key = snapshot.key
+                    if let postDict = snap.value as? Dictionary<String, AnyObject> {
+                        let key = snap.key
                         let post = venueData(postKey: key, postData: postDict)
                         self.locationData.append(post)
                     }
@@ -108,21 +107,25 @@ class Seach_Screen: UIViewController, UITableViewDelegate, UITableViewDataSource
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(locationData.count)
         return locationData.count
-
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let post = locationData[indexPath.row]
+        let finishedCell = locationData[indexPath.row]
 
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath) as? DataCell {
-            cell.configureCell(post: post)
-            
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell") as? DataCell {
+            cell.configureCell(post: finishedCell)
+            print("Location Data:", locationData)
+
             return cell
 
         }  else {
+            print("Nah")
+
             return DataCell()
+
         }
 
     }

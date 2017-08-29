@@ -14,5 +14,7 @@ target 'Relief' do
 	pod ‘FBSDKLoginKit’
     pod 'SwiftKeychainWrapper'
     pod 'Cosmos'
+	pod 'Fabric'
+	pod 'Crashlytics'
 
 end

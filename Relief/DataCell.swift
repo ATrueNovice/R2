@@ -21,6 +21,7 @@ class DataCell: UITableViewCell {
     }
 
     func configureCell(post: venueData) {
+        self.post = post
         self.venueLbl.text = post.locationName
         self.addressLbl.text = post.address
         

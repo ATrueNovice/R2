@@ -13,11 +13,6 @@ import SwiftKeychainWrapper
 let DB_BASE = Database.database().reference()
 //This code gets the database from the Google service Plist. This houses the URL to the firebase file.
 
-//let infoRef = Dataservice.ds.REF_VENUE.child("info")
-
-//let STORAGE_BASE = Storage.storage().reference()
-//Tells the app where to pull data from.
-
 
 class Dataservice {
 
@@ -26,8 +21,8 @@ class Dataservice {
     //DB References
 
     private var _REF_BASE = DB_BASE
-    private var _REF_VENUE = DB_BASE.child("Venue")
-    private var _REF_USERS = DB_BASE.child("Users")
+    private var _REF_VENUE = DB_BASE.child("venue")
+    private var _REF_USERS = DB_BASE.child("users")
 
 
 
